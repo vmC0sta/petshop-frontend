@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lino's Studio</title>
+    <link rel="stylesheet" href="/src/output.css">
+
+</head>
+
+<body class="bg-branco">
+    <header class="bg-amarelo flex justify-between pt-5 pb-2 px-4 shadow-lg" id="header-fechado">
+        <div class="flex">
+            <a href="/index.html">
+                <img src="/assets/svg/logo.svg" alt="Logo Linos's Studio" width="80rem">
+            </a>
+        </div>
+        <nav>
+            <div class="cursor-pointer" id="open_closed-button">
+                <img src="/assets/svg/menu-icon.svg" alt="menu">
+            </div>
+        </nav>
+    </header>
+    <header class="justify-center bg-amarelo_laranja text-branco text-center font-bold p-[1rem] shadow-lg hidden"
+        id="header-aberto">
+        <ul>
+            <li class="m-2 w-screen"><a href="/src/login.html">Login</a></li>
+            <li class="border-t border-b m-3 w-screen p-2"><a href="/src/cadastro.html">Cadastrar</a></li>
+            <li class="m-2 w-screen">Consultar serviços em aberto</li>
+        </ul>
+    </header>
+    <main>
+        <div class="text-justify" style="margin: 1.5rem 1.5rem 3rem 1.5rem">
+            <h1 class="text-laranja text-2xl font-poppins font-black">
+                Login
+            </h1>
+        </div>
+        <div class="mx-5">
+            <form>
+                <div class="wrapper-form">
+                    <label for="">E-mail</label><span>(Obrigatório)</span>
+                    <input type="text">
+                </div>
+                <div class="wrapper-form">
+                    <label for="">Senha</label><span>(Obrigatório)</span>
+                    <input type="password">
+                </div>
+            </form>
+            <div class="flex justify-center" style="margin-top: 4rem ;">
+                <button class="button-secundary">Entrar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="/src/js/index.js"></script>
+
+
+</body>
+
+</html>

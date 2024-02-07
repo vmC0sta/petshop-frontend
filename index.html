@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lino's Studio</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body class="bg-amarelo">
+    <header class="bg-amarelo flex justify-between pt-5 pb-2 px-4" id="header-fechado">
+        <div class="flex">
+            <a href="/index.html">
+                <img src="/assets/svg/logo.svg" alt="Logo Linos's Studio" width="80rem">
+            </a>
+        </div>
+        <nav>
+            <div class="cursor-pointer" id="open_closed-button">
+                <img src="/assets/svg/menu-icon.svg" alt="menu">
+            </div>
+        </nav>
+    </header>
+    <header class="justify-center bg-amarelo_laranja text-branco text-center font-bold p-[1rem] shadow-lg hidden"
+        id="header-aberto">
+        <ul>
+            <li class="m-2 w-screen"><a href="/src/login.html">Login</a></li>
+            <li class="border-t border-b m-3 w-screen p-2"><a href="/src/cadastro.html">Cadastrar</a></li>
+            <li class="m-2 w-screen">Consultar serviços em aberto</li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <div class="block justify-center">
+                <div class="text-center" style="margin: 4rem 0 0 0;">
+                    <h1 class="text-branco text-2xl font-poppins font-black">
+                        Escolha o Cuidado Perfeito
+                    </h1>
+                </div>
+                <div class="text-center" style="margin: 1rem">
+                    <p class="text-branco font-poppins font-medium">
+                        Check our latest fashion collection For Your Most Loyal Friend
+                    </p>
+                </div>
+                <div class="flex justify-center" style="margin:1.5rem 0 ;">
+                    <a href="#servicos">
+                        <div class="button-primary">Explorar</div>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="/assets/png/cachorro.png" alt="cachorro vira-lata">
+            </div>
+        </section>
+        <section class="bg-branco" style="padding: 0.1rem;">
+            <div class="text-center" style="margin: 2.5rem 0;">
+                <h1 class="text-laranja text-2xl font-poppins font-black">
+                    Onde estamos
+                </h1>
+            </div>
+            <div class="px-3 flex justify-center">
+                <img src="/assets/png/localizacao.png" alt="">
+            </div>
+            <div class="text-center" style="margin: 2.5rem 0;" id="servicos">
+                <h1 class="text-laranja text-2xl font-poppins font-black">
+                    Serviços
+                </h1>
+            </div>
+            <div class="flex justify-center">
+                <div class="services">
+                    Banho e tosa
+                </div>
+            </div>
+            <div style="margin: 4rem;">
+                <div class="flex justify-center">
+                    <button class="button-secundary">Agendar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="p-5">
+        <div class="flex justify-center font-poppins ">
+            <p>Siga nossas redes sociais</p>
+        </div>
+        <ul class="flex justify-center space-x-5 mt-2">
+            <li><a href="https://api.whatsapp.com/send/?phone=554191825811&text&type=phone_number&app_absent=0"><img
+                        src="/assets/svg/whatsapp-icon.svg" alt="whatsapp"></a></li>
+            <li><a href="https://www.instagram.com/linos.studio_banhoetosa/"><img
+                        src="/assets/svg/instagram-icon.svg" alt="instagram"></a></li>
+            <li><a href="https://www.facebook.com/petlinos"><img src="/assets/svg/facebook-icon.svg"
+                        alt="facebook"></a></li>
+        </ul>
+    </footer>
+
+
+    <script src="/src/js/index.js"></script>
+
+</body>
+
+</html>
