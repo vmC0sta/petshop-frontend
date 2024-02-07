@@ -54,26 +54,26 @@ p{
   border-radius: 30px;
   @apply font-poppins;
   @apply font-semibold;
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 
 .wrapper-form{
-  margin: 1rem 0;
+  margin: 1rem 1.25rem;
 }
 
 .wrapper-form label{
   @apply font-poppins;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .wrapper-form span{
   @apply font-poppins;
   font-size: 0.8rem;
-  margin: 5px;
+  margin: 0.5rem;
   color: var(--texto-cinza)
 }
 
-.wrapper-form input, select{
+.wrapper-form input, select,textarea{
   background-color: var(--input-cinza);
   border: 1px solid var(--borda-input-cinza);
   width: 100%;
@@ -83,4 +83,27 @@ p{
   border-radius: 5px;
   font-size: 0.8rem;
   @apply font-poppins
+}
+
+.wrapper-form-check{
+  margin: 1rem 1.25rem;
+  display: flex;
+  color: var(--texto-preto);
+  font-size: 0.8rem;
+  @apply font-poppins
+}
+
+.wrapper-form-check .check{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.wrapper-form-check .check div{
+  margin: 0 0.5rem;
+}
+.wrapper-form-check .check span{
+  @apply font-semibold;
+  font-size: 0.8rem;
 }

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
       colors:{
@@ -9,6 +9,7 @@ module.exports = {
         amarelo: "var(--amarelo)",
         amarelo_laranja:"var(--amarelo-laranja)",
         texto_preto: "var(--texto-preto)",
+        texto_cinza: "var(--texto-cinza)",
         preto_negrito:"var(--preto-negrito)", 
         botao_cinza: "var(--botao-cinza)",
       },
