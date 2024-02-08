@@ -736,6 +736,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2547,6 +2551,8 @@ p{
   font-family: Poppins, sans-serif;
   font-weight: 600;
   font-size: 0.8rem;
+  width: 90%;
+  text-align: center;
 }
 
 .wrapper-form{
