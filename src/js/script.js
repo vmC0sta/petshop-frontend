@@ -26,8 +26,13 @@ main.addEventListener("mousedown", () => {
   }
 });
 
-window.addEventListener("load", (event) => {
+window.addEventListener('load', ()=>{
+    setInterval(loading, 1000);
+})
+
+
+function loading() {
   let LoadAnim = document.getElementsByClassName("loading")[0];
   LoadAnim.style.display = "none";
   content.style.display = "block";
-});
+}

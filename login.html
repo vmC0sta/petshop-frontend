@@ -10,51 +10,61 @@
 </head>
 
 <body class="bg-branco">
-    <header class="bg-amarelo flex justify-between pt-5 pb-2 px-4 shadow-lg" id="header-fechado">
-        <div class="flex">
-            <a href="./index.html">
-                <img src="./assets/svg/logo.svg" alt="Logo Linos's Studio" width="80rem">
-            </a>
-        </div>
-        <nav>
-            <div class="cursor-pointer" id="open_closed-button">
-                <img src="./assets/svg/menu-icon.svg" alt="menu">
-            </div>
-        </nav>
-    </header>
-    <header class="justify-center bg-amarelo_laranja text-branco text-center font-bold p-[1rem] shadow-lg hidden"
-        id="header-aberto">
-        <ul>
-            <li class="m-2 w-screen"><a href="./login.html">Login</a></li>
-            <li class="border-t border-b m-3 w-screen p-2"><a href="./cadastro.html">Cadastrar</a></li>
-            <li class="m-2 w-screen">Consultar serviços em aberto</li>
-        </ul>
-    </header>
-    <main>
-        <div class="text-justify" style="margin: 1.5rem 1.5rem 3rem 1.5rem">
-            <h1 class="text-laranja text-2xl font-poppins font-black">
-                Login
-            </h1>
-        </div>
-        <div class="mx-5">
-            <form>
-                <div class="wrapper-form">
-                    <label for="">E-mail</label><span>(Obrigatório)</span>
-                    <input type="text">
-                </div>
-                <div class="wrapper-form">
-                    <label for="">Senha</label><span>(Obrigatório)</span>
-                    <input type="password">
-                </div>
-            </form>
-            <div class="flex justify-center" style="margin-top: 4rem ;">
-                <button class="button-secundary">Entrar</button>
-            </div>
-        </div>
-    </main>
 
-    <script src="./src/js/index.js"></script>
+    <div class="loading h-screen flex justify-center items-center">
+        <svg class="w-10 h-10 animate-spin" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+                d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z" />
+        </svg>
+    </div>
 
+    <div class="content hidden">
+        <header class="bg-amarelo flex justify-between pt-5 pb-2 px-4 shadow-lg" id="header-fechado">
+            <div class="flex">
+                <a href="./index.html">
+                    <img src="./assets/svg/logo.svg" alt="Logo Linos's Studio" width="80rem">
+                </a>
+            </div>
+            <nav>
+                <div class="cursor-pointer" id="open_closed-button">
+                    <img src="./assets/svg/menu-icon.svg" alt="menu">
+                </div>
+            </nav>
+        </header>
+        <header class="justify-center bg-amarelo_laranja text-branco text-center font-bold p-[1rem] shadow-lg hidden"
+            id="header-aberto">
+            <ul>
+                <li class="m-2 w-screen"><a href="./login.html">Login</a></li>
+                <li class="border-t border-b m-3 w-screen p-2"><a href="./cadastro.html">Cadastrar</a></li>
+                <li class="m-2 w-screen">Consultar serviços em aberto</li>
+            </ul>
+        </header>
+        <main>
+            <div class="text-justify" style="margin: 1.5rem 1.5rem 3rem 1.5rem">
+                <h1 class="text-laranja text-2xl font-poppins font-black">
+                    Login
+                </h1>
+            </div>
+            <div class="mx-5">
+                <form>
+                    <div class="wrapper-form">
+                        <label for="">E-mail</label><span>(Obrigatório)</span>
+                        <input type="text">
+                    </div>
+                    <div class="wrapper-form">
+                        <label for="">Senha</label><span>(Obrigatório)</span>
+                        <input type="password">
+                    </div>
+                </form>
+                <div class="flex justify-center" style="margin-top: 4rem ;">
+                    <button class="button-secundary">Entrar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./src/js/script.js"></script>
 
 </body>
 
