@@ -119,8 +119,6 @@ senhaVerificada.senhaVerificada.addEventListener("keyup", () => {
 
 window.addEventListener("change", () => {
 
-  validaCamposPreenchidos(inputsRequired)
-
   if (nome.ok && email.ok && telefone.ok && senha.ok && senhaVerificada.ok) {
     btnConfirmar.classList.remove("button-secundary-rejected");
     btnConfirmar.classList.add("button-secundary-accepted");
