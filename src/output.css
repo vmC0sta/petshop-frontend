@@ -835,6 +835,18 @@ video {
   display: none;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -909,6 +921,16 @@ video {
 
 .transform-none {
   transform: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
 .cursor-pointer {
