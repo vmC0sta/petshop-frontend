@@ -49,50 +49,56 @@
             <div class="mx-5">
                 <form>
                     <div class="wrapper-form">
-                        <label for="">Nome completo</label><span>(Obrigatório)</span>
-                        <input type="text">
+                        <label for="nome">Nome completo</label><span>(Obrigatório)</span>
+                        <input type="text" id="nome" required>
+                        <span id="validatorNome" style="color: red;"> </span>
                     </div>
                     <div class="wrapper-form">
-                        <label for="">Cidade</label><span>(Obrigatório)</span>
-                        <select id="cidade" name="cidade">
+                        <label for="cidade">Cidade</label><span>(Obrigatório)</span>
+                        <select id="cidade" name="cidade" required>
                             <option value="australia">Curitiba</option>
                             <option value="canada">Almirante Tamandaré</option>
                             <option value="usa">Colombo</option>
                         </select>
                     </div>
                     <div class="wrapper-form">
-                        <label for="">Bairro</label><span>(Obrigatório)</span>
-                        <input type="text">
+                        <label for="bairro">Bairro</label><span>(Obrigatório)</span>
+                        <input type="text"required>
                     </div>
                     <div class="wrapper-form">
-                        <label for="">Número</label><span>(Obrigatório)</span>
-                        <input type="text" placeholder="S/N caso não houver número">
+                        <label for="numero">Número</label><span>(Obrigatório)</span>
+                        <input type="text" placeholder="S/N caso não houver número" required>
                     </div>
                     <div class="wrapper-form">
                         <label for="">Telefone/Celular</label><span>(Obrigatório)</span>
-                        <input type="text" placeholder="(47) 99347-5311">
+                        <input type="tel" placeholder="(47) 99347-5311" required id="telefone" maxlength="15" minlength="15">
+                        <span id="validatorTelefone" style="color: red;"></span>
                     </div>
                     <div class="wrapper-form">
-                        <label for="">E-mail</label><span>(Obrigatório)</span>
-                        <input type="text" placeholder="(47) 99347-5311">
+                        <label for="email">E-mail</label><span>(Obrigatório)</span>
+                        <input type="email" placeholder="seu_email@gmail.com" required id="email">
+                        <span id="validatorEmail" style="color: red;"> </span>
                     </div>
                     <div class="wrapper-form">
                         <label for="">Senha</label><span>(Obrigatório)</span>
-                        <input type="password">
+                        <input type="password" id="senha" required>
+                        <span id="validatorSenha" style="color: red;"></span>
                     </div>
                     <div class="wrapper-form">
-                        <label for="">Confirmar senha</label><span>(Obrigatório)</span>
-                        <input type="password">
+                        <label for="senhaVerificada">Confirmar senha</label><span>(Obrigatório)</span>
+                        <input type="password" required id="senhaVerificada">
+                        <span id="validatorSenhaVerificada" style="color: red;"></span>
+                    </div>
+                    <div class="flex justify-center m-10">
+                        <button id="btn-confirmar" class="button-secundary-rejected" disabled>Confirmar</button>
                     </div>
                 </form>
-                <div class="flex justify-center m-10">
-                    <button class="button-secundary">Confirmar</button>
-                </div>
             </div>
         </main>
     </div>
 
     <script src="./src/js/script.js"></script>
+    <script src="./src/js/validaCadastro.js"></script>
 
 </body>
 

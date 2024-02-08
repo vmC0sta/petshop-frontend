@@ -578,12 +578,6 @@ video {
   }
 }
 
-@font-face {
-  font-family: 'Poppins';
-
-  src: url("/projeto/assets/fontes/Poppins.zip");
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
