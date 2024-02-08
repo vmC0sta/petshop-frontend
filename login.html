@@ -49,22 +49,25 @@
             <div class="mx-5">
                 <form>
                     <div class="wrapper-form">
-                        <label for="">E-mail</label><span>(Obrigatório)</span>
-                        <input type="text">
+                        <label for="email">E-mail</label><span>(Obrigatório)</span>
+                        <input type="text" id="email" required>
+                        <span id="validatorEmail" style="color: red;"> </span>
                     </div>
                     <div class="wrapper-form">
                         <label for="">Senha</label><span>(Obrigatório)</span>
-                        <input type="password">
+                        <input type="password" id="senha" required>
+                        <span id="validatorSenha" style="color: red;"></span>
+                    </div>
+                    <div class="flex justify-center" style="margin-top: 4rem ;">
+                        <button class="button-secundary-rejected" id="btn-entrar" disabled>Entrar</button>
                     </div>
                 </form>
-                <div class="flex justify-center" style="margin-top: 4rem ;">
-                    <button class="button-secundary">Entrar</button>
-                </div>
             </div>
         </main>
     </div>
 
     <script src="./src/js/script.js"></script>
+    <script src="./src/js/validacaoLogin.js"></script>
 
 </body>
 

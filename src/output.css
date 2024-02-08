@@ -2533,7 +2533,18 @@ p{
   cursor: pointer;
 }
 
-.button-secundary{
+.button-secundary-rejected{
+  border: none;
+  border-radius: 10px;
+  background-color: #fa71167c;
+  padding: 0.5rem 2.5rem;
+  color: var(--branco);
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.button-secundary-accepted{
   border: none;
   border-radius: 10px;
   background-color: var(--laranja);
