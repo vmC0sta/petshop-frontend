@@ -60,7 +60,7 @@
                     </div>
                     <div class="wrapper-form">
                         <label for="">Observação</label><span>
-                        <textarea cols="30" rows="10"></textarea>
+                            <textarea cols="30" rows="10"></textarea>
                     </div>
 
                     <!-- Serviços -->
@@ -214,6 +214,26 @@
                         </div>
                     </div>
 
+                    <!-- Horário -->
+
+                    <div class="text-justify" style="margin: 1.5rem">
+                        <h1 class="text-laranja text-2xl font-poppins font-black">
+                            Horário
+                        </h1>
+                    </div>
+
+                    <div class="flex justify-between" style="margin: 1.5rem;">
+                        <div class="wrapper-form">
+                            <label for="">Data</label><span>(Obrigatório)</span>
+                            <button class="button-calendary">Selecionar data</button>
+                        </div>
+
+                        <div class="wrapper-form">
+                            <label for="">Hora</label><span>(Obrigatório)</span>
+                            <input type="time" id="hora">
+                        </div>
+                    </div>
+
                     <!-- Retirada/Entrega -->
 
                     <div class="text-justify" style="margin: 1.5rem">
@@ -275,13 +295,14 @@
 
                 </form>
                 <div class="flex justify-center m-10">
-                    <button class="button-secundary">Confirmar</button>
+                    <button class="button-secundary-accepted">Confirmar</button>
                 </div>
             </div>
         </main>
     </div>
 
     <script src="./src/js/script.js"></script>
+    <script src="./src/js/validaDatas.js"></script>
 
 </body>
 
