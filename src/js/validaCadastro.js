@@ -4,6 +4,7 @@ const nome = {
   ok: false,
 };
 
+
 const email = {
   email: document.getElementById("email"),
   validatorEmailMessage: document.getElementById("validatorEmail"),
@@ -28,12 +29,7 @@ const senhaVerificada = {
     "validatorSenhaVerificada"
   ),
   ok: false,
-};
-
-const inputsRequired = {
-  input:  document.getElementsByTagName("input"),
-  ok: false
-};
+}
 
 const btnConfirmar = document.getElementById("btn-confirmar");
 
