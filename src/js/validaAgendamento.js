@@ -50,5 +50,12 @@ window.addEventListener('change', () => {
                 servicos_disponiveis.servicosM[i].setAttribute('disabled', true);
             }
             break;
+        default:
+            for (let i = 0; i < servicos_disponiveis.servicosG.length; i++) {
+                console.log(servicos_disponiveis.servicosG[i])
+                servicos_disponiveis.servicosG[i].setAttribute('disabled', true);
+                servicos_disponiveis.servicosP[i].setAttribute('disabled', true);
+                servicos_disponiveis.servicosM[i].setAttribute('disabled', true);
+            }
     }
 })
