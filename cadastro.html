@@ -54,16 +54,29 @@
                         <span id="validatorNome" style="color: red;"> </span>
                     </div>
                     <div class="wrapper-form">
+                        <label for="nome">CPF</label><span>(Obrigatório)</span>
+                        <input type="text" id="cpf" required>
+                        <span id="validatorCpf" style="color: red;"> </span>
+                    </div>
+                    <div class="wrapper-form">
+                        <label for="cep">CEP</label><span>(Obrigatório)</span>
+                        <input type="text" id="cep">
+                    </div>
+                    <div class="wrapper-form">
+                        <label for="cidade">Logradouro</label><span>(Obrigatório)</span>
+                        <input type="text" id="logradouro" class="endereco">
+                    </div>
+                    <div class="wrapper-form">
                         <label for="cidade">Cidade</label><span>(Obrigatório)</span>
-                        <select id="cidade" name="cidade" required>
-                            <option value="australia">Curitiba</option>
-                            <option value="canada">Almirante Tamandaré</option>
-                            <option value="usa">Colombo</option>
-                        </select>
+                        <input type="text" id="cidade" class="endereco">
+                    </div>
+                    <div class="wrapper-form">
+                        <label for="cidade">UF</label><span>(Obrigatório)</span>
+                        <input type="text" id="estado" class="endereco">
                     </div>
                     <div class="wrapper-form">
                         <label for="bairro">Bairro</label><span>(Obrigatório)</span>
-                        <input type="text"required>
+                        <input type="text"required id="bairro" class="endereco"> 
                     </div>
                     <div class="wrapper-form">
                         <label for="numero">Número</label><span>(Obrigatório)</span>
@@ -99,6 +112,7 @@
 
     <script src="./src/js/script.js"></script>
     <script src="./src/js/validaCadastro.js"></script>
+    <script src="./src/js/cadastro/address/address.js"></script>
 
 </body>
 
