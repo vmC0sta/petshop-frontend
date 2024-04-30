@@ -4,6 +4,17 @@ const nome = {
   ok: false,
 };
 
+const cpf = {
+  cpf: document.getElementById("cpf"),
+  validatorCPFMessage: document.getElementById("validatorCpf"),
+  ok: false,
+}
+
+const cep = {
+  cep: document.getElementById("cep"),
+  validatorCEPMessage: document.getElementById("validatorCep"),
+  ok: false,
+}
 
 const email = {
   email: document.getElementById("email"),
@@ -37,6 +48,15 @@ function validaNome(nome) {
   return /^[A-ZÀ-Ÿ][A-zÀ-ÿ']+\s([A-zÀ-ÿ']\s?)*[A-ZÀ-Ÿ][A-zÀ-ÿ']+$/.test(nome);
 }
 
+function validaCPF(cpf) {
+  return /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/.test(cpf);
+}
+
+function validaCEP(cep) {
+  return /^\d{5}-\d{3}$/.test(cep);
+}
+
+
 function validaEmail(email) {
   return /^[\w+.]+@\w+\.\w{2,}(?:\.\w{2})?$/.test(email);
 }
@@ -47,11 +67,27 @@ function validaTelefone(telefone) {
   );
 }
 
+
 function validaSenha(senha) {
   return /^(?=.*[A-Z])(?=.*\d)(?=.*[$&+,:;=?@#|'<>.^*()%!-])(?!.*\s).{8,}$/.test(
     senha
   );
 }
+
+const mascaraCPF = (valor) => {
+  valor = valor.replace(/\D/g, "")
+  valor = valor.replace(/(\d{3})(\d)/, "$1.$2")
+  valor = valor.replace(/(\d{3})(\d)/, "$1.$2")
+  valor = valor.replace(/(\d{3})(\d{1,2})$/, "$1-$2")
+  cpf.cpf.value = valor;
+}
+
+const mascaraCEP = (valor) => {
+  valor = valor.replace(/\D/g, "");
+  valor = valor.replace(/^(\d{5})(\d)/, "$1-$2"); 
+  cep.cep.value = valor
+}
+
 
 const mascaraTelefone = (valor) => {
   valor = valor.replace(/\D/g, "");
@@ -59,6 +95,28 @@ const mascaraTelefone = (valor) => {
   valor = valor.replace(/(\d)(\d{4})$/, "$1-$2");
   telefone.telefone.value = valor;
 };
+
+cpf.cpf.addEventListener("keyup", () => {
+  mascaraCPF(cpf.cpf.value);
+  if (!validaCPF(cpf.cpf.value)) {
+    cpf.validatorCPFMessage.innerHTML = "CPF inválido";
+    cpf.ok = false;
+  } else {
+    cpf.validatorCPFMessage.innerHTML = "";
+    cpf.ok = true;
+  }
+})
+
+cep.cep.addEventListener("keyup", ()=>{
+  mascaraCEP(cep.cep.value);
+  if(!validaCEP(cep.cep.value)){
+    cep.validatorCEPMessage.innerHTML = "Cep inválido";
+    cep.ok = false
+  }else{
+    cep.validatorCEPMessage.innerHTML = "";
+    cep.ok = true
+  }
+})
 
 telefone.telefone.addEventListener("keyup", () => {
   mascaraTelefone(telefone.telefone.value);
@@ -115,7 +173,7 @@ senhaVerificada.senhaVerificada.addEventListener("keyup", () => {
 
 window.addEventListener("change", () => {
 
-  if (nome.ok && email.ok && telefone.ok && senha.ok && senhaVerificada.ok) {
+  if (nome.ok && email.ok && telefone.ok && senha.ok && senhaVerificada.ok && cpf.ok && cep.ok) {
     btnConfirmar.classList.remove("button-secundary-rejected");
     btnConfirmar.classList.add("button-secundary-accepted");
     btnConfirmar.disabled = false;

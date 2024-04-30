@@ -47,7 +47,7 @@
                 </h1>
             </div>
             <div class="mx-5">
-                <form>
+                <form id="form">
                     <div class="wrapper-form">
                         <label for="nome">Nome completo</label><span>(Obrigatório)</span>
                         <input type="text" id="nome" required>
@@ -55,32 +55,33 @@
                     </div>
                     <div class="wrapper-form">
                         <label for="nome">CPF</label><span>(Obrigatório)</span>
-                        <input type="text" id="cpf" required>
+                        <input type="text" id="cpf" required maxlength="14" minlength="14">
                         <span id="validatorCpf" style="color: red;"> </span>
                     </div>
                     <div class="wrapper-form">
                         <label for="cep">CEP</label><span>(Obrigatório)</span>
-                        <input type="text" id="cep">
+                        <input type="text" id="cep" maxlength="9" minlength="9">
+                        <span id="validatorCep" style="color: red;"> </span>
                     </div>
                     <div class="wrapper-form">
                         <label for="cidade">Logradouro</label><span>(Obrigatório)</span>
-                        <input type="text" id="logradouro" class="endereco">
+                        <input type="text" id="logradouro" class="endereco" disabled>
                     </div>
                     <div class="wrapper-form">
                         <label for="cidade">Cidade</label><span>(Obrigatório)</span>
-                        <input type="text" id="cidade" class="endereco">
+                        <input type="text" id="cidade" class="endereco" disabled>
                     </div>
                     <div class="wrapper-form">
                         <label for="cidade">UF</label><span>(Obrigatório)</span>
-                        <input type="text" id="estado" class="endereco">
+                        <input type="text" id="estado" class="endereco" disabled>
                     </div>
                     <div class="wrapper-form">
                         <label for="bairro">Bairro</label><span>(Obrigatório)</span>
-                        <input type="text"required id="bairro" class="endereco"> 
+                        <input type="text"required id="bairro" class="endereco" disabled> 
                     </div>
                     <div class="wrapper-form">
                         <label for="numero">Número</label><span>(Obrigatório)</span>
-                        <input type="text" placeholder="S/N caso não houver número" required>
+                        <input type="text" placeholder="S/N caso não houver número" required id="numero">
                     </div>
                     <div class="wrapper-form">
                         <label for="">Telefone/Celular</label><span>(Obrigatório)</span>
@@ -112,7 +113,11 @@
 
     <script src="./src/js/script.js"></script>
     <script src="./src/js/validacoes/validaCadastro.js"></script>
-    <script src="./src/js/cadastro/address/address.js"></script>
+    <script src="./src/js/cadastro/controller/addressController.js"></script>
+    <script src="./src/js/cadastro/controller/userController.js"></script>
+    <script src="./src/js/cadastro/controller/clientController.js"></script>
+    <script src="src/js/cadastro/controller/controller.js"></script>
+    
 
 </body>
 
