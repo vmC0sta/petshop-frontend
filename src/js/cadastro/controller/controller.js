@@ -1,3 +1,8 @@
+const popUp = document.getElementById("popup")
+const popUp_message = document.getElementById("popup-message")
+const popUp_img = document.getElementById("popup-img")
+let message
+
 async function createUserWithClientAndAddress(event) {
   event.preventDefault()
 
@@ -33,7 +38,14 @@ async function createUserWithClientAndAddress(event) {
     .then(user => {
       console.log("User saved", user)
     })
-    .catch(error => console.error("error saving", error))
+    .catch(error => 
+      message = error
+    )
+
+    if(!response.ok){
+      popUp.style.display = 'flex'
+    }
+
 }
 
 

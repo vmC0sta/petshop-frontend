@@ -19,12 +19,11 @@
         </svg>
     </div>
 
-    <div class="wrapper-modal">
-        <div class="modal">
-            aaa
-        </div>
+    <div class="wrapper-modal" id="popup">
+        <button class="close" id="popup-close">✖</button>
+        <img id="popup-img" src="assets/svg/error.svg" />
+        <p id="popup-message"></p>
     </div>
-
 
     <div class="content hidden">
         <header class="bg-amarelo flex justify-between pt-5 pb-2 px-4 shadow-lg" id="header-fechado">
@@ -125,8 +124,8 @@
     <script src="./src/js/cadastro/controller/addressController.js"></script>
     <script src="./src/js/cadastro/controller/userController.js"></script>
     <script src="./src/js/cadastro/controller/clientController.js"></script>
-    <script src="src/js/cadastro/controller/controller.js"></script>
-
+    <script src="./src/js/cadastro/controller/controller.js"></script>
+    <script src="./src/js/msgError/msgCadastro.js"></script>
 
 </body>
 

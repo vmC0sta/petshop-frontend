@@ -2512,11 +2512,11 @@ video {
   padding: 0;
 }
 
-p{
+p {
   font-size: 0.8rem;
 }
 
-.button-primary{
+.button-primary {
   border: none;
   border-radius: 10px 10px 10px 0;
   background-color: var(--laranja);
@@ -2527,7 +2527,7 @@ p{
   cursor: pointer;
 }
 
-.button-secundary-rejected{
+.button-secundary-rejected {
   border: none;
   border-radius: 10px;
   background-color: #fa71167c;
@@ -2538,7 +2538,7 @@ p{
   font-size: 0.8rem;
 }
 
-.button-secundary-accepted{
+.button-secundary-accepted {
   border: none;
   border-radius: 10px;
   background-color: var(--laranja);
@@ -2549,7 +2549,7 @@ p{
   font-size: 0.8rem;
 }
 
-.services{
+.services {
   border: 3px solid var(--amarelo);
   padding: 0.5rem 2.5rem;
   border-radius: 30px;
@@ -2560,7 +2560,7 @@ p{
   text-align: center;
 }
 
-.wrapper-form{
+.wrapper-form {
   margin: 1rem 1.25rem;
 }
 
@@ -2576,11 +2576,13 @@ p{
   color: var(--texto-cinza);
 }
 
-.wrapper-form input, select,textarea{
+.wrapper-form input,
+select,
+textarea {
   background-color: var(--input-cinza);
   border: 1px solid var(--borda-input-cinza);
   width: 100%;
-  margin:0.2rem;
+  margin: 0.2rem;
   padding: 0.5rem 1rem;
   text-align: left;
   border-radius: 5px;
@@ -2588,7 +2590,7 @@ p{
   font-family: Poppins, sans-serif
 }
 
-.wrapper-form-check{
+.wrapper-form-check {
   margin: 1rem 1.25rem;
   display: flex;
   color: var(--texto-preto);
@@ -2596,19 +2598,58 @@ p{
   font-family: Poppins, sans-serif
 }
 
-.wrapper-form-check .check{
+.wrapper-form-check .check {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.wrapper-form-check .check div{
+.wrapper-form-check .check div {
   margin: 0 0.5rem;
 }
 
 .wrapper-form-check .check span {
   font-weight: 600;
   font-size: 0.8rem;
+}
+
+.wrapper-modal {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 70px;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 35rem;
+  max-width: 90%;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #000;
+  font-family: Poppins, sans-serif
+}
+
+button.close {
+  width: 30px;
+  font-size: 20px;
+  color: #c0c5cb;
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 82px;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 40px;
+  font-size: 18px;
 }
 
 @media (min-width: 640px) {
