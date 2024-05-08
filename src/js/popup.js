@@ -1,7 +1,6 @@
-const closeBtn = document.getElementById("popup-close")
+const btnClose = document.getElementById("btn-close")
 const popUp = document.getElementById("popup")
 
-closeBtn.addEventListener("click", ()=>{
-    console.log("cliquei")
+btnClose.addEventListener('click', ()=>{
     popUp.style.display = 'none'
 })

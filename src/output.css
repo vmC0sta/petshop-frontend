@@ -2614,7 +2614,7 @@ textarea {
 }
 
 .wrapper-modal {
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 30px 30px 70px;
   align-items: center;
@@ -2642,14 +2642,9 @@ button.close {
   margin-bottom: 10px;
 }
 
-img {
+#popup-img {
   width: 82px;
   margin-bottom: 15px;
-}
-
-p {
-  margin-bottom: 40px;
-  font-size: 18px;
 }
 
 @media (min-width: 640px) {
