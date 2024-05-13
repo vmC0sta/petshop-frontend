@@ -2,7 +2,7 @@ const popUp_message = document.getElementById("popup-message")
 const popUp_img = document.getElementById("popup-img")
 let message
 
-async function createUserWithClientAndAddress(event) {
+async function createClientWithAddress(event) {
   event.preventDefault()
 
   const address = {
@@ -27,7 +27,7 @@ async function createUserWithClientAndAddress(event) {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ user: user, client: client, address: address }),
+      body: JSON.stringify({client: client, address: address }),
     });
 
     if (!response.ok) {
