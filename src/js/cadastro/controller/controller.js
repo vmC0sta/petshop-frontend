@@ -52,4 +52,4 @@ async function createClientWithAddress(event) {
 }
 
 
-document.getElementById("btn-confirmar").addEventListener('click', createUserWithClientAndAddress)
+document.getElementById("btn-confirmar").addEventListener('click', createClientWithAddress)
