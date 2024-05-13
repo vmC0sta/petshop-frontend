@@ -25,7 +25,7 @@ async function createUserWithClientAndAddress(event) {
     client: client
   };
   try {
-    const response = await fetch('http://localhost:8080/api/user/create', {
+    const response = await fetch('https://petshop-backend-tkps.onrender.com/api/user/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
