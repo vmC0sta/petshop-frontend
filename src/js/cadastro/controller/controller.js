@@ -22,7 +22,7 @@ async function createUserWithClientAndAddress(event) {
     address: address
   };
   try {
-    const response = await fetch('https://petshop-backend-tkps.onrender.com/api/user/create', {
+    const response = await fetch('https://petshop-backend-tkps.onrender.com/api/client/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
