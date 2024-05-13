@@ -14,15 +14,12 @@ async function createUserWithClientAndAddress(event) {
     state: document.getElementById("estado").value
   };
   const client = {
+    email: document.getElementById("email").value,
+    password: document.getElementById("senha").value,
     name: document.getElementById("nome").value,
     cpf: document.getElementById("cpf").value,
     phone: document.getElementById("telefone").value,
     address: address
-  };
-  const user = {
-    email: document.getElementById("email").value,
-    password: document.getElementById("senha").value,
-    client: client
   };
   try {
     const response = await fetch('https://petshop-backend-tkps.onrender.com/api/user/create', {
