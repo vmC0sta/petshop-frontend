@@ -11,7 +11,7 @@ async function createClientWithAddress(event) {
     district: document.getElementById("bairro").value,
     zipCode: document.getElementById("cep").value,
     city: document.getElementById("cidade").value,
-    state: document.getElementById("estado").value
+    state: document.getElementById("estado").value,
   };
   const client = {
     email: document.getElementById("email").value,
@@ -22,7 +22,7 @@ async function createClientWithAddress(event) {
     address: address
   };
   try {
-    const response = await fetch('https://petshop-backend-tkps.onrender.com/api/client/create', {
+    const response = await fetch('http://localhost:8080/api/client/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
