@@ -1,6 +1,5 @@
 const popUp_message = document.getElementById("popup-message")
 const popUp_img = document.getElementById("popup-img")
-let message
 
 async function createClientWithAddress(event) {
   event.preventDefault()
@@ -42,7 +41,6 @@ async function createClientWithAddress(event) {
       popUp_img.src = 'assets/svg/sucess.svg'
     }
   } catch (error) {
-    // Tratar o erro quando o servidor não está disponível
     const popUp = document.getElementById("popup");
     const popUp_message = document.getElementById("popup-message");
     popUp.style.display = 'flex';
