@@ -1,6 +1,7 @@
 const popUp_message = document.getElementById("popup-message")
 const popUp_img = document.getElementById("popup-img")
 
+
 async function createClientWithAddress(event) {
   event.preventDefault()
 
@@ -21,7 +22,7 @@ async function createClientWithAddress(event) {
     address: address
   };
   try {
-    const response = await fetch('http://localhost:8080/api/client/create', {
+    const response = await fetch('http://localhost:8080/auth/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
